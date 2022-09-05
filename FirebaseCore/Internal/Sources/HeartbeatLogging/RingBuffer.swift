@@ -16,7 +16,7 @@ import Foundation
 
 /// Error types for `RingBuffer` operations.
 enum RingBufferError: LocalizedError {
-  case outOfBoundsPush(pushIndex: Array.Index, endIndex: Array.Index)
+  case outOfBoundsPush(pushIndex: Array<Any>.Index, endIndex: Array<Any>.Index)
 
   var errorDescription: String {
     switch self {
